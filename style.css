@@ -1,7 +1,12 @@
 html {
   font-size: 10px;
-  background: url('./img/bkgrnd.jpg');
+  background: url('./img/blue.jpg');
   background-size:cover;
+}
+h1{
+    text-transform:capitalize;
+    text-align: center;
+    display:-moz-groupbox;
 }
 
   body {
@@ -13,11 +18,10 @@ html {
       align-items: center;
     }
 
-
     .clock {
       width: 30rem;
       height: 30rem;
-      border: 20px solid rgb(173, 54, 54);
+      border: 20px solid rgb(245, 239, 239);
       border-radius: 50%;
       margin: 50px auto;
       position: relative;
@@ -33,7 +37,7 @@ html {
       position: relative;
       width: 100%;
       height: 100%;
-      transform: translateY(-4px); /* account for the height of the clock hands */
+      transform: translateY(-3px); /* account for the height of the clock hands */
     }
 
     .hand {
@@ -45,5 +49,5 @@ html {
       transform-origin: 100%;
       transform: rotate(90deg);
       transition: all 0.05s;
-      transition-timing-function:(0.1, 2.7, 0.58, 1);
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     }
